@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    position: fixed;
+    width: 74%;
+    margin:auto;
+    padding:20px 0;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:red;
+}
+.details{
+    margin-left: 4%;
+    margin-top: 8%;
+}
+.details h1{
+    font-size: 50px;
+    color: #212121;
+}
+span{
+    color: orange;
+}
+.details a{
+    background: #000;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin-top: 55px;
+    margin: 30px;
+    border-radius: 10px;
+    border-color: none;
+
+}
+.profilepic{
+    z-index: 0;
+
+}
+.profilepic img{
+    position: absolute;
+    border-radius: 50%;
+    top: 160px;
+    right: 120px;
+    height: 370px;
+    width: 370px;
+    margin-bottom: 20px;
+    
+}
+.dynamic-details .job{
+    font-size: 30px;
+    color: #2c3e50;
+    display: flex;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.dynamic-details .job .typing-text{
+    color: #1de2d1;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 2px;
+    border-right: 3px solid #b98118;
+    animation: typing 14s steps(37) infinite; 
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 37ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+.button1{
+        margin: 20px 2 2 50px;
+        color: #fff;
+        margin: 0 10px;
+        padding: 8px 16px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius:6px;
+        outline: none;
+        border: solid #08833f;
+        transform: all 0.3s ease;
+        background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);  
+        margin-bottom: 20px;
+        margin-top: 20px;
+}
+.button1:hover{
+    transform: scale(0.98);
+    background: linear-gradient(135deg, #424099 10%, #08833f 100%); 
+    color: #b98118;
+}
+
+
+
